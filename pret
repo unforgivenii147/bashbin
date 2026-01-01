@@ -1,0 +1,3 @@
+#!/data/data/com.termux/files/usr/bin/bash
+prettier --write --single-quote --log-level log .
+
