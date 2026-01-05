@@ -1,3 +1,1 @@
-#!/data/data/com.termux/files/usr/bin/bash
-python -m ruff format --target-version py312 .
-python -m ruff clean
+./ruf.sh

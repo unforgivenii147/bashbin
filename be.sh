@@ -46,10 +46,8 @@ export LDFLAGS="-L${PREFIX}/lib -fPIE -pie"
 export CFLAGS="$CFLAGS -O2"
 export CXXFLAGS="$CXXFLAGS -O2"
 
-
 export PYTHON_CFLAGS="$CFLAGS"
 export PYTHON_LDFLAGS="$LDFLAGS"
 
 # Useful when using pip for native builds
 export PIP_BUILD_ISOLATION=0
-

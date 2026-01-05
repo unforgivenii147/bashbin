@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "searching for unstripped binnaries in current dir"
+fd -t f . -x file {} |
+	rg 'ELF.*not stripped'

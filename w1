@@ -1,2 +1,1 @@
-#!/data/data/com.termux/files/usr/bin/bash
-python -m build -w --verbose
+./w1.sh

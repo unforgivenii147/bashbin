@@ -1,3 +1,1 @@
-#!/bin/sh
-echo "searching for unstripped binnaries in current dir"
-fd -tf  -x file {} | rg 'ELF'
+./find_elf.sh

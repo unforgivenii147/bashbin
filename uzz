@@ -1,3 +1,1 @@
-#!/data/data/com.termux/files/usr/bin/bash
-
-unzip *
+./uzz.sh
