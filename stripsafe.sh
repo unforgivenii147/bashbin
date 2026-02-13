@@ -1,0 +1,9 @@
+#!/bin/sh
+# 1. Extract debug symbols
+objcopy --only-keep-debug "$@" "$@".debug
+
+# 2. Strip only debug info (NOT dynamic symbols)
+strip --strip-debug "$@"
+
+# 3. Link debug symbols back
+objcopy --add-gnu-debuglink="$@".debug "$@"
