@@ -1,12 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/python
 import os
-BASHBIN="/data/data/com.termux/files/home/bashbin"
-BIN="/data/data/com.termux/files/home/bin"
 
+BASHBIN = "/data/data/com.termux/files/home/bashbin"
+BIN = "/data/data/com.termux/files/home/bin"
 
-if __name__=='__main__':
+if __name__ == '__main__':
 
-    source_dirs=[BASHBIN,BIN]
+    source_dirs = [BASHBIN, BIN]
     for source_dir in source_dirs:
         if source_dir == BASHBIN:
             ext = ".sh"

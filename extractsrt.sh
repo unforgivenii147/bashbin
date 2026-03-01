@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Check input
 if [ -z "$1" ]; then
 	echo "Usage: $0 <video.mkv|video.mp4>"
 	exit 1
@@ -8,18 +7,15 @@ fi
 
 INPUT="$1"
 
-# Check ffmpeg
 command -v ffmpeg >/dev/null 2>&1 || {
 	echo "ffmpeg is required but not installed."
 	exit 1
 }
 
-# Base filename (without extension)
 BASENAME="${INPUT%.*}"
 
 echo "Scanning subtitles in: $INPUT"
 
-# Get subtitle stream indexes that are SRT
 mapfile -t SUBS < <(
 	ffprobe -v error \
 		-select_streams s \

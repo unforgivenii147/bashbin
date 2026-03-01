@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Clean old git history + branches older than 10 days
-# Why: Reduce repo size, keep only useful history
 
 set -e
 
@@ -29,7 +27,6 @@ git gc --prune=10.days.ago --aggressive
 echo
 echo "Step 3: Deleting local branches already merged into main/master..."
 
-# Auto-detect main branch name
 if git show-ref --verify --quiet refs/heads/main; then
 	MAIN=main
 else

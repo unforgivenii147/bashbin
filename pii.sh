@@ -1,2 +1,3 @@
 #!/bin/sh
-PYTHONDONTWRITEBYTECOMPILE=1 python -m pip install --no-deps --force-reinstall "$@"
+export VERBOSE=1
+PYTHONDONTWRITEBYTECOMPILE=1 python -m pip install --upgrade --no-deps --force-reinstall "$@"

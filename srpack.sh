@@ -1,2 +1,2 @@
 #!/bin/sh
-siter --site-packages . --output ~/tmp/whl --verbose --package "$@"
+siter --site-packages . --output /sdcard/whl --verbose --package "$@"

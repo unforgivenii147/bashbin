@@ -1,2 +1,2 @@
 #!/bin/sh
-autoflake --in-place --remove-all-unused-imports "$@"
+autoflake --in-place --ignore-init-module-imports --remove-all-unused-imports "$@"

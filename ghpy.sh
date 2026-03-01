@@ -6,26 +6,7 @@ gh search repos "language:Python" \
 	--limit 50
 
 # -------- other useful stuff --------
-#  stars gained recently
 
-#gh search repos "language:Python stars:>100" \
-#  --sort stars \
-#  --order desc \
-#  --limit 50
 
-# ------------------
-# show useful columns
-#gh search repos "language:Python" \
-#  --sort stars \
-#  --order desc \
-#  --limit 50 \
-#  --json name,description,stargazerCount,url \
-#  --jq '.[] | "\(.stargazerCount) ★ \(.name)\n\(.description)\n\(.url)\n"'
 
-# ---------------------
-# closest to github trending api
 
-#gh search repos "language:Python created:>$(date -d '7 days ago' +%Y-%m-%d)" \
-#  --sort stars \
-#  --order desc \
-#  --limit 50

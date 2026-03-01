@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# Ensure ffmpeg is installed
 command -v ffmpeg >/dev/null 2>&1 || {
 	echo "ffmpeg is required but not installed."
 	exit 1
 }
 
 for mp3 in *.mp3; do
-	# Skip if no mp3 files exist
 	[ -e "$mp3" ] || continue
 
 	tmp="${mp3%.mp3}_64.mp3"

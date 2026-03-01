@@ -3,7 +3,6 @@
 unlink_recursive() {
 	path="$1"
 
-	# Try to recurse into it as a directory first
 	for entry in "$path"/* "$path"/.[!.]* "$path"/..?*; do
 		case "$entry" in
 		*'*'* | *'?'*) continue ;;
@@ -11,7 +10,6 @@ unlink_recursive() {
 		unlink_recursive "$entry"
 	done 2>/dev/null
 
-	# Then try to remove the path itself
 	if rmdir "$path" 2>/dev/null; then
 		:
 	elif unlink "$path" 2>/dev/null; then

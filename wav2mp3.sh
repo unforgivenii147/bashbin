@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# Exit if ffmpeg is not installed
 command -v ffmpeg >/dev/null 2>&1 || {
 	echo "ffmpeg is required but not installed."
 	exit 1
 }
 
 for wav in *.wav; do
-	# Skip if no wav files exist
 	[ -e "$wav" ] || continue
 
 	mp3="${wav%.wav}.mp3"

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Check for ImageMagick
 command -v magick >/dev/null 2>&1 || {
 	echo "ImageMagick (magick) is required but not installed."
 	exit 1
@@ -9,12 +8,10 @@ command -v magick >/dev/null 2>&1 || {
 shopt -s nullglob nocaseglob
 
 for img in *; do
-	# Skip jpg/jpeg
 	case "$img" in
 	*.jpg | *.jpeg) continue ;;
 	esac
 
-	# Check if file is an image
 	if magick identify "$img" >/dev/null 2>&1; then
 		out="${img%.*}.jpg"
 
