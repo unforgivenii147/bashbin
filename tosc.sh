@@ -1,2 +1,3 @@
-#!/bin/sh
-mv "$@" ~/isaac/feb/scripts/
+#!/data/data/com.termux/files/usr/bin/bash
+
+mv -iv "$@" ~/isaac/march/scripts/

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 command -v magick >/dev/null 2>&1 || {
 	echo "ImageMagick (magick) is required but not installed."

@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/data/data/com.termux/files/usr/bin/bash
+
 ./configure
 make -j8
 make install

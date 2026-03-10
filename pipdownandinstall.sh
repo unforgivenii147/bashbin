@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/data/data/com.termux/files/usr/bin/bash
+
 WHL="/data/data/com.termux/files/home/tmp/whl"
 mkdir -p "$WHL"
 PKG="$@"

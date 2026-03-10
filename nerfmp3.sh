@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 command -v ffmpeg >/dev/null 2>&1 || {
 	echo "ffmpeg is required but not installed."

@@ -1,14 +1,4 @@
-#!/bin/sh
-strip_elf() {
-	objcopy --only-keep-debug "$@" \
-		"$@".debug
-	strip --strip-debug "$@"
-	objcopy --add-gnu-debuglink="$@".debug \
-		"$@"
-}
+#!/data/data/com.termux/files/usr/bin/bash
 
 echo "searching for unstripped binarries and auto strip them"
-fd -t f . --batch-size=12 -X file {} |
-	rg 'ELF.*not stripped' |
-	cut -d: -f1 |
-	xargs strip_elf
+fd -tf . --batch-size=12 -X file {} | grep 'ELF.*not stripped' | cut -d: -f1 | xargs strip

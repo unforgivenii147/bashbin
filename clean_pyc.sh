@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
+
 # Target the Termux prefix (usually /data/data/com.termux/files/usr)
 TARGET_DIR="${PREFIX:-/data/data/com.termux/files/usr}"
 

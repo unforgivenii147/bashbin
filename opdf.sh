@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 if [ $# -eq 0 ]; then
 	echo "Usage: $0 input.pdf"

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 if [ -z "$1" ]; then
 	echo "Error: No directory provided."

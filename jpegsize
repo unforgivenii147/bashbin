@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/env slsh
+#!/data/data/com.termux/files/usr/bin/bash
 
 % This script prints the width and height of one or more jpeg image files.
 if (__argc < 2)

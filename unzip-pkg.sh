@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 PKG_NAME="$1"
 PYTHON_VERSION="python3.12"

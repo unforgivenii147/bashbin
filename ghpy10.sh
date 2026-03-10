@@ -1,4 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
+
 echo "py repos with most stars since 10 days ago"
 gh search repos "language:Python" \
 	--sort stars \

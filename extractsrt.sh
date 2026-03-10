@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 if [ -z "$1" ]; then
 	echo "Usage: $0 <video.mkv|video.mp4>"
