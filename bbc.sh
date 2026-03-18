@@ -1,3 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-rm -rf build dist target
+rm -rvf build dist target
+rm -rvf *egg-info
