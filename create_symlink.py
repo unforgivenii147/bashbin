@@ -30,6 +30,4 @@ if __name__ == "__main__":
                         f"Created symlink: {link_name} -> {src_file}"
                     )
                 except FileExistsError:
-                    print(
-                        f"Symlink already exists: {link_name}"
-                    )
+                    pass
