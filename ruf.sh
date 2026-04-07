@@ -1,4 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-ruff format --target-version py312 .
+python -m ruff format --config ~/.config/ruff/ruff.toml .
 ruff clean

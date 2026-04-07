@@ -2,6 +2,5 @@
 
 git init
 git add .
-git add -A
-git commit -m "4"
-
+git diff --cached --quiet
+git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"

@@ -1,4 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-python -m ruff check --fix --unsafe-fixes .
+ruff check --config ~/.config/ruff/ruff.toml . --fix --unsafe-fixes --diff
 ruff clean
