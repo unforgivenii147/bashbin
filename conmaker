@@ -1,5 +1,1 @@
-#!/data/data/com.termux/files/usr/bin/bash
-
-./configure
-make -j4
-make install
+conmaker.sh

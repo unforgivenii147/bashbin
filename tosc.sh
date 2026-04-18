@@ -1,3 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-mv -v "$@" ~/isaac/march/scripts/
+mv "$@" ~/isaac/apr/scripts/

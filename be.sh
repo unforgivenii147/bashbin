@@ -1,6 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-
 export CC="clang"
 export CXX="clang++"
 export AR="ar"

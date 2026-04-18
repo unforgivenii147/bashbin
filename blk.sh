@@ -1,3 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-black -l 120 -t py312 -W 8 -v --color .
+black --config ~/pyproject.toml -l 120 -t py312 -W 16 -v --color .

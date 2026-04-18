@@ -7,7 +7,3 @@ gh search repos "language:Python" \
 	--limit 50
 
 # -------- other useful stuff --------
-
-
-
-

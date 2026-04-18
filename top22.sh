@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-largest_file=$(python3 - << 'EOF'
+largest_file=$(
+	python3 - <<'EOF'
 import os
 from pathlib import Path
 
@@ -22,8 +23,8 @@ EOF
 )
 
 if [ -z "$largest_file" ]; then
-    echo "No files found."
-    exit 1
+	echo "No files found."
+	exit 1
 fi
 
 echo "Largest file: $largest_file"

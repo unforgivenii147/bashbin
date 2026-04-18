@@ -43,7 +43,7 @@ unzip -qq -o "$ZIP_FILE" -d "$SITE_PACKAGES/"
 # 3. Restore .so files if a hybrid lib folder exists
 LIBS_PATH="$ZIP_DIR/${PKG_NAME}_libs"
 if [ -d "$LIBS_PATH" ]; then
-#	echo -e "${YELLOW}Restoring C extensions...${NC}"
+	#	echo -e "${YELLOW}Restoring C extensions...${NC}"
 	cp -r "$LIBS_PATH/"* "$SITE_PACKAGES/"
 	rm -rf "$LIBS_PATH"
 fi
