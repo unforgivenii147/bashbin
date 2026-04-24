@@ -1,4 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-ruff check --config ~/.config/ruff/ruff.toml . --fix --unsafe-fixes --diff
+ruff --config ~/.config/ruff/ruff.toml check --fix --unsafe-fixes --diff .
 ruff clean
