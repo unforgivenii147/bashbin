@@ -1,3 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-python -m build -w
+python -m build -w --verbose

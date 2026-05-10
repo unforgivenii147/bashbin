@@ -1,3 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-xz -z -6 --threads=4 -v "$@"
+xz -z -e -11 --threads=4 --block-size=32768 -v "$@"

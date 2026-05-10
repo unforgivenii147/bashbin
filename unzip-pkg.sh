@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 PKG_NAME="$1"
-PYTHON_VERSION="python3.12"
+PYTHON_VERSION="python3.13"
 SITE_PACKAGES="/data/data/com.termux/files/usr/lib/$PYTHON_VERSION/site-packages"
 ZIP_DIR="/data/data/com.termux/files/usr/lib/$PYTHON_VERSION/site-packages"
 

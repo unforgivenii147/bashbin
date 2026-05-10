@@ -1,0 +1,3 @@
+--bracket-same-line=true
+--no-bracket-spacing
+--embedded-language-formatting=auto

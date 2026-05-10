@@ -14,8 +14,6 @@ command -v ffmpeg >/dev/null 2>&1 || {
 
 BASENAME="${INPUT%.*}"
 
-echo "Scanning subtitles in: $INPUT"
-
 mapfile -t SUBS < <(
 	ffprobe -v error \
 		-select_streams s \
