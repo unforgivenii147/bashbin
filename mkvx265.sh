@@ -1,3 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
 ffmpeg -i "$@" \
 	-c:v libx265 -preset veryslow -crf 30 \
 	-vf scale=854:-1 \
