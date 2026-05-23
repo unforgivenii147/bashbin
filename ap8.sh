@@ -1,3 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-autopep8 -r -i -j 12 -v .
+autopep8 -r -i -j 4 -v .
