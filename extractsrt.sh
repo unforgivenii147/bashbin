@@ -43,3 +43,6 @@ for LINE in "${SUBS[@]}"; do
 done
 
 echo "Done."
+
+
+# convert to python

@@ -1,7 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/bash
-
-git fetch origin
-
-git rebase origin/master --allow-unrelated-histories
-
-git push --force-with-lease origin master

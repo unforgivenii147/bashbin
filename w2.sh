@@ -1,3 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 python setup.py bdist_wheel
+pip install dist/*.whl --force-reinstall --no-deps --verbose
+

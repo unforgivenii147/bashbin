@@ -1,3 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-fd -e JPG -e JPEG -e jpg -e jpeg --batch-size=12 -X jpegoptim -f -m 50 --max 70 --threshold 0.5 --strip-all -w8 {}
+find . -type f -name \*.jpeg -execdir jpegoptim -f -m 65 --max 85 --threshold 0.7 --strip-all -w8 {} \;
+find . -type f -name \*.jpg -execdir jpegoptim -f -m 65 --max 85 --threshold 0.7 --strip-all -w8 {} \;

@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 ffmpeg -i "$@" \
-	-c:v libx265 -preset veryslow -crf 30 \
+	-c:v libx265 -preset veryfast -crf 30 \
 	-vf scale=854:-1 \
 	-c:a aac -b:a 64k \
 	output_480p_x265.mp4

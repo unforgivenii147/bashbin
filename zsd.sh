@@ -1,2 +1,2 @@
 #!/bin/sh
-zstd --rm --ultra -22 --progress --format=lzma "$@"
+zstd --rm --ultra -19 --progress --format=zstd "$@"
