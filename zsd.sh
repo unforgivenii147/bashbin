@@ -1,2 +1,2 @@
 #!/bin/sh
-zstd --rm --ultra -19 --progress --format=zstd "$@"
+zstd --rm -9 --progress --format=zstd "$@"
