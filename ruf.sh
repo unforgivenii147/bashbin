@@ -1,4 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-ruff format "${@:-.}"
-ruff clean
+ruff --config "format.quote-style = 'double'" format "${@:-.}"

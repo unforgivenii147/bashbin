@@ -1,3 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-pip install --no-compile --no-deps "$@"
+aria2c --split=8 "${@}"
