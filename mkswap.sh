@@ -1,10 +1,7 @@
 #!/bin/sh
 # Use a swap file
-dd if=/dev/zero of=/data/data//swap bs=1024 count=524288
-chmod 600 /sdcard/swap
-mkswap /sdcard/swap 
-
-
-&
-swapon /sdcard/swap &
+dd if=/dev/zero of=/data/data/com.termux/files/usr/tmp/swap bs=1024 count=524288
+chmod 600 /data/data/com.termux/files/usr/tmp/swap
+mkswap /data/data/com.termux/files/usr/tmp/swap &
+swapon /data/data/com.termux/files/usr/tmp/swap
 

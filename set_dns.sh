@@ -10,13 +10,11 @@
 # Point to it (may need root)
 #export RESOLV_CONF=~/.resolv.conf
 
-
 # Set DNS via environment variable
 export ANDROID_DNS_OVERRIDE="1.1.1.1,8.8.8.8"
 
 # Or use termux's built-in method
 #termux-fix-shebang
-
 
 nslookup github.com 1.1.1.1
 nslookup github.com 8.8.8.8
