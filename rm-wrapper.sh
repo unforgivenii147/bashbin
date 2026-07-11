@@ -1,1 +1,1 @@
-./rm-wrapper.sh.sh
+/data/data/com.termux/files/home/bashbin/rm-wrapper.sh.sh

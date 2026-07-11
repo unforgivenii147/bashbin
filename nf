@@ -1,1 +1,1 @@
-./nf.sh
+/data/data/com.termux/files/home/bashbin/nf.sh

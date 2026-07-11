@@ -1,1 +1,1 @@
-./pusher.sh.sh
+/data/data/com.termux/files/home/bashbin/pusher.sh.sh

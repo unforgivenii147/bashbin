@@ -1,1 +1,1 @@
-pwn.sh
+/data/data/com.termux/files/home/bashbin/pwn.sh

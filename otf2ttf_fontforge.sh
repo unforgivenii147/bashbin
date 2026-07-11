@@ -1,6 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
-# Convert OTF to TTF recursively using FontForge
-# Usage: ./otf2ttf_fontforge.sh [directory]
 
 DIR="${1:-.}"
 

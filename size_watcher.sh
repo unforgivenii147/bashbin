@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 # --- CONFIGURATION ---
-TARGET_DIR="/data/data/com.termux/files/usr/lib/python3.13/site-packages"
+TARGET_DIR="/data/data/com.termux/files/usr/lib/python3.12/site-packages"
 THRESHOLD_MB=500
 # ---------------------
 

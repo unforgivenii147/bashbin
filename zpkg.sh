@@ -1,6 +1,6 @@
-#!/data/data/com.termux/files/usr/bin/bash
+!/data/data/com.termux/files/usr/bin/bash
 
-PYTHON_VERSION="python3.13"
+PYTHON_VERSION="python3.12"
 SITE_PACKAGES="/data/data/com.termux/files/usr/lib/$PYTHON_VERSION/site-packages"
 ZIP_DIR="/data/data/com.termux/files/usr/lib/$PYTHON_VERSION/site-packages"
 CYAN='\033[0;96m'

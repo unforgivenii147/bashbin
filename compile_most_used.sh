@@ -1,1 +1,1 @@
-./compile_most_used.sh.sh
+/data/data/com.termux/files/home/bashbin/compile_most_used.sh.sh

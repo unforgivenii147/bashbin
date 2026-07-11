@@ -9,20 +9,20 @@ echo "  • Prune unreachable commits older than 10 days"
 echo "  • Delete local branches already merged"
 echo "  • Delete remote merged branches (safe)"
 echo
-read -p "Continue? (y/N) " ans
+#read -p "Continue? (y/N) " ans
 
-if [[ "$ans" != "y" && "$ans" != "Y" ]]; then
-	echo "Aborted."
-	exit 1
-fi
+#if [[ "$ans" != "y" && "$ans" != "Y" ]]; then
+#	echo "Aborted."
+#	exit 1
+#fi
 
 echo
 echo "Step 1: Expire old reflog entries..."
-git reflog expire --expire=10.days.ago --expire-unreachable=10.days.ago --all
+git reflog expire --expire=2.days.ago --expire-unreachable=2.days.ago --all
 
 echo
 echo "Step 2: Garbage-collect unreachable commits..."
-git gc --prune=10.days.ago --aggressive
+git gc --prune=2.days.ago --aggressive
 
 echo
 echo "Step 3: Deleting local branches already merged into main/master..."
@@ -51,25 +51,6 @@ else
 	fi
 fi
 
-echo
-echo "Step 4: Cleaning remote merged branches (safe)..."
-
-REMOTE_MERGED=$(git branch -r --merged "$MAIN" | grep -v "$MAIN" | sed 's/origin\///' || true)
-
-if [[ -z "$REMOTE_MERGED" ]]; then
-	echo "No merged remote branches to delete."
-else
-	echo "Merged remote branches:"
-	echo "$REMOTE_MERGED"
-	read -p "Delete remote branches? (y/N) " del_remote
-	if [[ "$del_remote" == "y" || "$del_remote" == "Y" ]]; then
-		echo "$REMOTE_MERGED" | while read br; do
-			git push origin --delete "$br"
-		done
-	else
-		echo "Skipping remote branch deletion."
-	fi
-fi
 
 echo
 echo "=== Cleanup complete! ==="
