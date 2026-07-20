@@ -4,21 +4,21 @@
 echo "Fetching repository list..."
 
 gh repo list \
-  --limit 1000 \
-  --json name,diskUsage,visibility \
-  --jq '[
+	--limit 1000 \
+	--json name,diskUsage,visibility \
+	--jq '[
     .[] | {
       repo_name: .name,
       repo_size: .diskUsage,
       visibility: .visibility
     }
-  ]' > repolist.json
+  ]' >repolist.json
 
 # Verify the file was created
 if [ -f "repolist.json" ]; then
-  echo "✓ Repository list saved to repolist.json"
-  echo "Total repositories: $(jq '. | length' repolist.json)"
+	echo "✓ Repository list saved to repolist.json"
+	echo "Total repositories: $(jq '. | length' repolist.json)"
 else
-  echo "✗ Failed to create repolist.json"
-  exit 1
+	echo "✗ Failed to create repolist.json"
+	exit 1
 fi

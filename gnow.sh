@@ -51,6 +51,5 @@ else
 	fi
 fi
 
-
 echo
 echo "=== Cleanup complete! ==="

@@ -4,7 +4,6 @@
 #	fontforge -lang=ff -c "Open(\$1); Generate(\$2);" "$f" "$out"
 #done
 
-
 DIR="${1:-.}"
 
 # Find all ttc files recursively
